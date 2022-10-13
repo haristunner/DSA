@@ -27,6 +27,7 @@ void print(Node* a){
 void delete_node(Node* prev, Node* newn){
     prev->next=newn->next;
     newn->next=NULL;
+    delete newn;
 }
 
 int main()
